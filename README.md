@@ -165,7 +165,7 @@ El usuario hace clic en "Sortear amigo".
 Se selecciona un nombre aleatorio del array.
 
 ## REPASO ##
-### ¿Qué es el DOM?###
+### ¿Qué es el DOM? ###
 
 -El DOM es como un árbol genealógico, pero en forma invertida. El elemento que precede al document es el window, que no es más que la ventana del navegador. En su estructura, document se encuentra en la parte superior como un objeto global y su elemento raíz es la etiqueta html y todos los demás descienden de él a través de sus ramas (branches).
 ![Image](https://github.com/user-attachments/assets/10885070-9137-4903-9de7-91f2c1b19214)
