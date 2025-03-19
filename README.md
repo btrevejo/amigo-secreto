@@ -20,14 +20,14 @@ El codigo en Visual Studio Code:
 
 
 `let amigosArray = []; // Array para almacenar nombres`
--Explicación:
+
 
 -amigosArray es un array vacío que se usará para almacenar los nombres de los amigos que el usuario ingrese.
 
 -Este array es esencial para mantener los datos en memoria.
 
 ## 2. Función agregarAmigo()
-###2.1. Obtener el valor del campo de texto
+### 2.1. Obtener el valor del campo de texto
 
 `const inputAmigo = document.getElementById("amigo");
 const nombreAmigo = inputAmigo.value.trim();`
@@ -128,7 +128,7 @@ const resultado = document.getElementById("resultado");`
 
 `resultado.textContent` asigna el texto que muestra el nombre del amigo secreto, actualizando así el DOM.
 
-Resumen de la Interacción con el DOM
+### Resumen de la Interacción con el DOM
 Acceso al DOM:
 
 Se usan métodos como document.getElementById() para acceder a elementos específicos del DOM (por ejemplo, el campo de texto, la lista de nombres y el área de resultados).
@@ -149,7 +149,7 @@ Se usan métodos como document.getElementById() para acceder a elementos especí
 
 El DOM se actualiza dinámicamente en función de las acciones del usuario (agregar nombres, sortear un amigo).
 
-Ejemplo de Flujo del DOM
+-Ejemplo de Flujo del DOM
 Agregar nombres:
 
 El usuario ingresa un nombre en el campo de texto y hace clic en "Añadir".
