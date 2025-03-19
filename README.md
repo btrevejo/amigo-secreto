@@ -170,3 +170,8 @@ Se selecciona un nombre aleatorio del array.
 -El DOM es como un árbol genealógico, pero en forma invertida. El elemento que precede al document es el window, que no es más que la ventana del navegador. En su estructura, document se encuentra en la parte superior como un objeto global y su elemento raíz es la etiqueta html y todos los demás descienden de él a través de sus ramas (branches).
 ![Image](https://github.com/user-attachments/assets/10885070-9137-4903-9de7-91f2c1b19214)
 
+### Agregando amigos vemos la lista ###
+![Image](https://github.com/user-attachments/assets/5f1fea97-e540-446a-9b23-235c598d0d1d)
+
+### Sorteando de la lista de amigos que agregamos ###
+![Image](https://github.com/user-attachments/assets/fd1acd08-d6ca-46fd-a583-91c50ca39f4d)
