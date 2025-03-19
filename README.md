@@ -158,7 +158,7 @@ El nombre se agrega al array amigosArray.
 
 La lista `(<ul>)` en el DOM se actualiza para mostrar el nuevo nombre.
 
-###Sortear amigo secreto:
+### Sortear amigo secreto:
 
 El usuario hace clic en "Sortear amigo".
 
