@@ -3,13 +3,13 @@
 
 ## FUNCIONALIDADES A LOGRAR:
 
--Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
+<list>Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
 
--Validar entrada: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
+<list>Validar entrada: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 
--Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
+<list>Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
--Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
+<list>Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
 El codigo en Visual Studio Code:
 ![Image](https://github.com/user-attachments/assets/aefbbdd6-e2ba-410e-beb9-8083526fa208)
@@ -87,18 +87,18 @@ listaAmigos.innerHTML = ""; // Limpiar la lista antes de volver a renderizar`
 `}`
 
 
--document.createElement("li") crea un nuevo elemento <li> 
+-document.createElement("li") crea un nuevo elemento `<li>` 
 
--nuevoAmigo.textContent asigna el texto al elemento <li> (en este caso, el nombre del amigo y su número en la lista).
+-nuevoAmigo.textContent asigna el texto al elemento `<li>` (en este caso, el nombre del amigo y su número en la lista).
 
--listaAmigos.appendChild(nuevoAmigo) agrega el nuevo elemento <li> como hijo de la lista (<ul>), actualizandose así
+-listaAmigos.appendChild(nuevoAmigo) agrega el nuevo elemento `<li>` como hijo de la lista `(<ul>)`, actualizandose así
 
 ## 2.7. Limpiar el campo de texto
 `
 inputAmigo.value = ""; // Limpiar el campo de texto
 `
 
--inputAmigo.value = "" vacía el campo de texto (<input>), permitiendo que el usuario ingrese un nuevo nombre.
+`inputAmigo.value = ""` vacía el campo de texto (<input>), permitiendo que el usuario ingrese un nuevo nombre.
 
 ## 3. Función sortearAmigo()
 ### 3.1. Validar si hay nombres en la lista
@@ -124,16 +124,16 @@ const resultado = document.getElementById("resultado");`
 `resultado.textContent = El amigo secreto es: ${amigoSecreto};`
 
 
--document.getElementById("resultado") accede al elemento en el DOM que tiene el ID "resultado"
+`document.getElementById("resultado")` accede al elemento en el DOM que tiene el ID "resultado"
 
--resultado.textContent asigna el texto que muestra el nombre del amigo secreto, actualizando así el DOM.
+`resultado.textContent` asigna el texto que muestra el nombre del amigo secreto, actualizando así el DOM.
 
 Resumen de la Interacción con el DOM
 Acceso al DOM:
 
 Se usan métodos como document.getElementById() para acceder a elementos específicos del DOM (por ejemplo, el campo de texto, la lista de nombres y el área de resultados).
 
-Modificación del DOM:
+###Modificación del DOM:
 
 -Se crean nuevos elementos (document.createElement()).
 
@@ -141,11 +141,11 @@ Modificación del DOM:
 
 -Se actualiza el contenido de elementos existentes (textContent o innerHTML).
 
-Eventos del DOM:
+###Eventos del DOM:
 
 -Las funciones agregarAmigo() y sortearAmigo() se ejecutan en respuesta a eventos del usuario (por ejemplo, hacer clic en un botón).
 
-Manipulación dinámica:
+###Manipulación dinámica:
 
 El DOM se actualiza dinámicamente en función de las acciones del usuario (agregar nombres, sortear un amigo).
 
@@ -158,13 +158,15 @@ El nombre se agrega al array amigosArray.
 
 La lista `(<ul>)` en el DOM se actualiza para mostrar el nuevo nombre.
 
-Sortear amigo secreto:
+###Sortear amigo secreto:
 
 El usuario hace clic en "Sortear amigo".
 
 Se selecciona un nombre aleatorio del array.
-**REPASO:**
-¿Qué es el DOM?
+
+##REPASO##
+###¿Qué es el DOM?###
+
 -El DOM es como un árbol genealógico, pero en forma invertida. El elemento que precede al document es el window, que no es más que la ventana del navegador. En su estructura, document se encuentra en la parte superior como un objeto global y su elemento raíz es la etiqueta html y todos los demás descienden de él a través de sus ramas (branches).
 ![Image](https://github.com/user-attachments/assets/10885070-9137-4903-9de7-91f2c1b19214)
 
