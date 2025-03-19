@@ -1,7 +1,7 @@
 <h1>Amigo-secreto</h1> 
 <h2>Desafío de amigo secreto donde se pone a prueba los conocimientos obtenidos de los cursos de programación de Alura.</h2>
 
-##FUNCIONALIDADES A LOGRAR:
+## FUNCIONALIDADES A LOGRAR:
 
 -Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
 
@@ -84,7 +84,7 @@ listaAmigos.innerHTML = ""; // Limpiar la lista antes de volver a renderizar`
     `const nuevoAmigo = document.createElement("li"); // Crear un nuevo elemento <li>`
     `nuevoAmigo.textContent = `Amigo ${i+1} : ${amigo}`; // Agregar texto al elemento`
     `listaAmigos.appendChild(nuevoAmigo); // Agregar el elemento a la lista`
-}
+`}`
 
 
 -document.createElement("li") crea un nuevo elemento <li> 
@@ -100,36 +100,35 @@ inputAmigo.value = ""; // Limpiar el campo de texto
 
 -inputAmigo.value = "" vacía el campo de texto (<input>), permitiendo que el usuario ingrese un nuevo nombre.
 
-##3. Función sortearAmigo()
-3.1. Validar si hay nombres en la lista
+## 3. Función sortearAmigo()
+### 3.1. Validar si hay nombres en la lista
 `
-if (amigosArray.length === 0) {
-    alert("No hay nombres en la lista. Agrega al menos un amigo.");
-    return;
-}
-`
+if (amigosArray.length === 0){ `
+    `alert("No hay nombres en la lista. Agrega al menos un amigo.");`^
+    `return;`
+`}`
 
 Si no hay nombres en el array, se muestra una alerta al usuario. 
 
 ## 3.2. Seleccionar un nombre aleatorio
 
-`const indiceAleatorio = Math.floor(Math.random() * amigosArray.length);
-const amigoSecreto = amigosArray[indiceAleatorio];
-`
+`const indiceAleatorio = Math.floor(Math.random() * amigosArray.length);`
+`^const amigoSecreto = amigosArray[indiceAleatorio];`
+
 -Selecciona un nombre aleatorio del array amigosArray.
 
 
 ## 3.3. Mostrar el resultado
 `
-const resultado = document.getElementById("resultado");
-resultado.textContent = `El amigo secreto es: ${amigoSecreto}`;
-`
+const resultado = document.getElementById("resultado");`
+`resultado.textContent = El amigo secreto es: ${amigoSecreto};`
 
--document.getElementById("resultado") accede al elemento en el DOM que tiene el ID "resultado" (por ejemplo, un <p> o <div>).
+
+-document.getElementById("resultado") accede al elemento en el DOM que tiene el ID "resultado"
 
 -resultado.textContent asigna el texto que muestra el nombre del amigo secreto, actualizando así el DOM.
 
-<br>Resumen de la Interacción con el DOM
+Resumen de la Interacción con el DOM
 Acceso al DOM:
 
 Se usan métodos como document.getElementById() para acceder a elementos específicos del DOM (por ejemplo, el campo de texto, la lista de nombres y el área de resultados).
@@ -150,7 +149,7 @@ Manipulación dinámica:
 
 El DOM se actualiza dinámicamente en función de las acciones del usuario (agregar nombres, sortear un amigo).
 
-*Ejemplo de Flujo del DOM
+Ejemplo de Flujo del DOM
 Agregar nombres:
 
 El usuario ingresa un nombre en el campo de texto y hace clic en "Añadir".
@@ -164,8 +163,8 @@ Sortear amigo secreto:
 El usuario hace clic en "Sortear amigo".
 
 Se selecciona un nombre aleatorio del array.
-<br>REPASO:
-<br>¿Qué es el DOM?
+**REPASO:**
+¿Qué es el DOM?
 -El DOM es como un árbol genealógico, pero en forma invertida. El elemento que precede al document es el window, que no es más que la ventana del navegador. En su estructura, document se encuentra en la parte superior como un objeto global y su elemento raíz es la etiqueta html y todos los demás descienden de él a través de sus ramas (branches).
 ![Image](https://github.com/user-attachments/assets/10885070-9137-4903-9de7-91f2c1b19214)
 
