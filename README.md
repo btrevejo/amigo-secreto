@@ -26,8 +26,8 @@ El codigo en Visual Studio Code:
 
 -Este array es esencial para mantener los datos en memoria.
 
-##2. Función agregarAmigo()
-2.1. Obtener el valor del campo de texto
+## 2. Función agregarAmigo()
+###2.1. Obtener el valor del campo de texto
 
 `const inputAmigo = document.getElementById("amigo");
 const nombreAmigo = inputAmigo.value.trim();`
@@ -74,7 +74,7 @@ listaAmigos.innerHTML = ""; // Limpiar la lista antes de volver a renderizar`
 
 -`document.getElementById("listaAmigos")` accede al elemento `<ul>` en el DOM que tiene el ID "listaAmigos".
 
--`listaAmigos.innerHTML` = "" limpia el contenido actual de la lista (<ul>).
+-`listaAmigos.innerHTML` = "" limpia el contenido actual de la lista `(<ul>)`
 -Esto es necesario para evitar duplicados al volver a renderizar la lista.
 
 ## 2.6. Recorrer el array y mostrar los nombres en la lista
@@ -104,7 +104,7 @@ inputAmigo.value = ""; // Limpiar el campo de texto
 ### 3.1. Validar si hay nombres en la lista
 `
 if (amigosArray.length === 0){ `
-    `alert("No hay nombres en la lista. Agrega al menos un amigo.");`^
+    `alert("No hay nombres en la lista. Agrega al menos un amigo.");`
     `return;`
 `}`
 
@@ -133,7 +133,7 @@ Acceso al DOM:
 
 Se usan métodos como document.getElementById() para acceder a elementos específicos del DOM (por ejemplo, el campo de texto, la lista de nombres y el área de resultados).
 
-###Modificación del DOM:
+### Modificación del DOM:
 
 -Se crean nuevos elementos (document.createElement()).
 
@@ -141,11 +141,11 @@ Se usan métodos como document.getElementById() para acceder a elementos especí
 
 -Se actualiza el contenido de elementos existentes (textContent o innerHTML).
 
-###Eventos del DOM:
+### Eventos del DOM:
 
 -Las funciones agregarAmigo() y sortearAmigo() se ejecutan en respuesta a eventos del usuario (por ejemplo, hacer clic en un botón).
 
-###Manipulación dinámica:
+### Manipulación dinámica:
 
 El DOM se actualiza dinámicamente en función de las acciones del usuario (agregar nombres, sortear un amigo).
 
@@ -164,8 +164,8 @@ El usuario hace clic en "Sortear amigo".
 
 Se selecciona un nombre aleatorio del array.
 
-##REPASO##
-###¿Qué es el DOM?###
+## REPASO ##
+### ¿Qué es el DOM?###
 
 -El DOM es como un árbol genealógico, pero en forma invertida. El elemento que precede al document es el window, que no es más que la ventana del navegador. En su estructura, document se encuentra en la parte superior como un objeto global y su elemento raíz es la etiqueta html y todos los demás descienden de él a través de sus ramas (branches).
 ![Image](https://github.com/user-attachments/assets/10885070-9137-4903-9de7-91f2c1b19214)
